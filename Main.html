@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/font.css" rel="stylesheet" type="text/css">
+    <script src="js/Bootstrapjquery.js"></script>
+    <script src="js/Propper.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="FontAwesome/css/all.css">
+
+    <script defer src="FontAwesome/js/all.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title> KNUST Crime Record Management </title>
+
+    <style>
+
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+    <div class=" bg-light">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+            <a class="navbar-brand " href="#">
+                <img src="images/images (1).jfif" class="rounded ml-5" alt="knust loge" style="width: 100px; height:100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-0" id="navbarText">
+                <span class="text-light ml-auto" style="font-size: 35px;">
+                    KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY <br />
+                    <span class="" style="margin-left: 35%">SECURITY SERVICE</span>
+                </span>
+
+                <span class="navbar-text ml-auto">
+                    <a class="navbar-brand " href="#">
+                        <img src="images/images (2).jfif" class="rounded mr-5" alt="knust loge" style="width: 100px; height:100px;">
+                    </a>
+                </span>
+            </div>
+        </nav>
+    </div>
+    <div class=" py-5"></div>
+    <div class="container mt-5 pt-4">
+        <nav class="">
+            <div class="nav nav-tabs nav-pills flex-column flex-sm-row" id="nav-tab" role="tablist">
+                <a class="flex-sm-fill text-sm-center nav-item nav-link active" id="nav-FIR-tab" data-toggle="tab" href="#FIR" role="tab" aria-controls="nav-FIR" aria-selected="true">First Information Report</a>
+
+                <a class="flex-sm-fill text-sm-center nav-link" href="#">Cases</a>
+
+                <a class="flex-sm-fill text-sm-center nav-item nav-link" id="nav-news-tab" data-toggle="tab" href="#nav-breaking-news" role="tab" aria-controls="nav-profile" aria-selected="false">Breaking News</a>
+
+                <a class="flex-sm-fill text-sm-center nav-item nav-link" id="nav-missing-tab" data-toggle="tab" href="#nav-missing" role="tab" aria-controls="nav-contact" aria-selected="false">Missing Items</a>
+
+                <a class="flex-sm-fill text-sm-center nav-item nav-link" id="nav-help-line-tab" data-toggle="tab" href="#nav-help-line" role="tab" aria-controls="nav-contact" aria-selected="false">Help Line</a>
+
+                <a class="flex-sm-fill text-sm-center nav-link" href="index.html">Log Out</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class=" container mt-5  tab-content" id="nav-tabContent" style="margin-top: 30px">
+
+        <!-- First Information Report -->
+        <div class="tab-pane fade show active" id="FIR" role="tabpanel" aria-labelledby="nav-FIR-tab">
+            <!-- Complainant Information -->
+            <div class="container">
+                <h1 class="text-center my-5 text-muted"> FIRST INFORMATION REPORT </h1>
+
+                <div class="mt-4">
+                    <h3 class="text-muted">Complainant Information</h3>
+                    <hr>
+
+                    <form>
+                        <!-- First name | Last name | Last name -->
+                        <div class="form-row mt-4">
+
+                            <div class="form-group col-md-4">
+                                <label for="inputEmail4">First name</label>
+                                <input type="text" class="form-control" id="inputEmail4" placeholder="First name">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputEmail4">Middle name</label>
+                                <input type="text" class="form-control" id="inputEmail4" placeholder="Middle name">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputPassword4">Last name</label>
+                                <input type="text" class="form-control" id="inputPassword4" placeholder="Last name">
+                            </div>
+                        </div>
+
+                        <!-- Program of study | Year -->
+                        <div class="form-row mt-2">
+                            <div class="form-group col-md-8">
+                                <label for="inputEmail4"> Program of study</label>
+                                <input type="text" class="form-control" id="inputEmail4" placeholder="Bsc. Computer Science">
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <label for="inputPassword4">Year</label>
+                                <input type="number" class="form-control" id="inputPassword4" placeholder="Year 4">
+                            </div>
+                        </div>
+
+                        <!-- Hall/Hostel    |   Room no.text-muted  |   Others -->
+                        <div class="form-row mt-2">
+                            <div class="form-group col-md-8">
+                                <label for="inputEmail4"> Hall / Hostel</label>
+                                <input type="text" class="form-control" id="inputEmail4" placeholder="El-Shaddai">
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <label for="inputPassword4">Room No.</label>
+                                <input type="number" class="form-control" id="inputPassword4" placeholder="104">
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <label for="inputPassword4">Others</label>
+                                <input type="text" class="form-control" id="inputPassword4" placeholder="Annex">
+                            </div>
+                        </div>
+
+                        <!-- Email  |   Contact -->
+                        <div class="form-row mt-2">
+                            <div class="form-group col-md-8">
+                                <label for="inputEmail4"> Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="gilbert@gmail.com">
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <label for="inputPassword4">Contact</label>
+                                <input type="tel" class="form-control" id="inputPassword4" placeholder="0501594515">
+                            </div>
+                        </div>
+
+                        <!--        |   Relationship -->
+                        <div class="form-row mt-2">
+                            <div class="form-group col-md-8">
+                                <label for="inputEmail4"> Relation with Culprit</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Type here only when the type of relationship is not found in the dropdown ">
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <label for="inputState">Relationship</label>
+                                <select id="inputState" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>No relationship with culprit</option>
+                                        <option>Room mate</option>
+                                        <option>In the same hostel</option>
+                                        <option>Course mate</option>
+                                        <option>Senior course mate</option>
+                                        <option>Junior course mate</option>
+                                        <option>...</option>
+                                    </select>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+
+            <div class="mt-5">
+                <h3 class="text-muted">What case do wish to report?</h3>
+                <!-- <hr>
+                <h5 class="text-muted mt-4">How well do you know the culprit?</h5> -->
+
+                <div class="form-row mt-2">
+
+                    <div class="form-group col-md-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Report missing item
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Report a special case
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+            </div>
+
+            <div class="mt-4">
+                <h3 class="text-muted">Report Missing Item</h3>
+                <hr>
+                <h5 class="text-muted">Officer's details</h5>
+                <form>
+                    <!-- First name | Last name | Last name -->
+                    <div class="form-row mt-4">
+
+                        <div class="form-group col-md-4">
+                            <label for="inputEmail4">First name</label>
+                            <input type="text" class="form-control" id="inputEmail4" placeholder="First name">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputEmail4">Middle name</label>
+                            <input type="text" class="form-control" id="inputEmail4" placeholder="Middle name">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputPassword4">Last name</label>
+                            <input type="text" class="form-control" id="inputPassword4" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="form-row mt-2">
+                        <div class="form-group col-md-4">
+                            <label for="inputEmail4">Provide officer's station</label>
+                            <input type="text" class="form-control" id="inputEmail4" placeholder="Location">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputPassword4">Date</label>
+                            <input type="date" class="form-control" id="inputPassword4" placeholder="Date and Time">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputPassword4">Time</label>
+                            <input type="time" class="form-control" id="inputPassword4" placeholder="Date and Time">
+                        </div>
+                    </div>
+                </form>
+
+
+                <!-- Criminal / Culprit Information -->
+                <div class="container">
+
+                    <div class="mt-5">
+                        <h3 class="text-muted">Criminal / Culprit Information</h3>
+                        <hr>
+                        <h5 class="text-muted mt-4">How well do you know the culprit?</h5>
+
+                        <div class="form-row mt-2">
+
+                            <div class="form-group col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Enough and valid information
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Just littel but valid information
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Just littel and not too sure of information
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <form>
+                            <!-- First name | Last name | Last name -->
+                            <div class="form-row mt-4">
+
+                                <div class="form-group col-md-4">
+                                    <label for="inputEmail4">First name</label>
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="First name">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputEmail4">Middle name</label>
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Middle name">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputPassword4">Last name</label>
+                                    <input type="text" class="form-control" id="inputPassword4" placeholder="Last name">
+                                </div>
+                            </div>
+
+                            <!-- Program of study | Year -->
+                            <div class="form-row mt-2">
+                                <div class="form-group col-md-8">
+                                    <label for="inputEmail4"> Program of study</label>
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Bsc. Computer Science">
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                    <label for="inputPassword4">Year</label>
+                                    <input type="number" class="form-control" id="inputPassword4" placeholder="Year 4">
+                                </div>
+                            </div>
+
+                            <!-- Hall/Hostel    |   Room no.text-muted  |   Others -->
+                            <div class="form-row mt-2">
+                                <div class="form-group col-md-8">
+                                    <label for="inputEmail4"> Hall / Hostel</label>
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="El-Shaddai">
+                                </div>
+
+                                <div class="form-group col-md-2">
+                                    <label for="inputPassword4">Room No.</label>
+                                    <input type="number" class="form-control" id="inputPassword4" placeholder="104">
+                                </div>
+
+                                <div class="form-group col-md-2">
+                                    <label for="inputPassword4">Others</label>
+                                    <input type="text" class="form-control" id="inputPassword4" placeholder="Annex">
+                                </div>
+                            </div>
+
+                            <!-- Nature of offence  |   Location where incident occured     |       Date and Time -->
+                            <div class="form-row mt-2">
+
+                                <div class="form-group col-md-4">
+                                    <label for="inputState">Type of offence</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>Stolen of student property</option>
+                                        <option>Damage of school property</option>
+                                        <option>Lost of property</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputEmail4">Place where incident occured</label>
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Location">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputPassword4">Date</label>
+                                    <input type="date" class="form-control" id="inputPassword4" placeholder="Date and Time">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputPassword4">Time</label>
+                                    <input type="time" class="form-control" id="inputPassword4" placeholder="Date and Time">
+                                </div>
+                            </div>
+
+                            <!-- Voice note  |   Contact -->
+                            <div class="form-row mt-2">
+
+                                <div class="form-group col-md-8">
+                                    <label for="inputEmail4">Voice note</label>
+                                    <input type="file" class="form-control" id="inputEmail4">
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                    <label for="inputPassword4">Contact</label>
+                                    <input type="text" class="form-control" id="inputPassword4" placeholder="0501594515">
+                                </div>
+                            </div>
+
+                            <!-- Any other information -->
+                            <div class="form-row mt-2">
+                                <div class="form-group col-md-12">
+                                    <label for="inputEmail4">Type any information not mentioned</label>
+                                    <textarea name="" id="" cols="155" rows="4"></textarea>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <!-- Just little but valid -->
+                <div class="container">
+
+                    <div class="mt-5">
+                        <hr>
+                        <span class="text-muted display-5">Just little but valid</span>
+                        <hr>
+
+                        <form>
+                            <!-- Nature of offence  |   Location where incident occured     |       Date and Time -->
+                            <div class="form-row mt-2">
+
+                                <div class="form-group col-md-4">
+                                    <label for="inputState">Type of offence</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>Stolen of student property</option>
+                                        <option>Damage of school property</option>
+                                        <option>Lost of property</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputEmail4">Place where incident occured</label>
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Location">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputPassword4">Date</label>
+                                    <input type="date" class="form-control" id="inputPassword4" placeholder="Date and Time">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputPassword4">Time</label>
+                                    <input type="time" class="form-control" id="inputPassword4" placeholder="Date and Time">
+                                </div>
+                            </div>
+
+                            <!-- Voice note  |   Contact -->
+                            <div class="form-row mt-2">
+
+                                <div class="form-group col-md-8">
+                                    <label for="inputEmail4">Voice note</label>
+                                    <input type="file" class="form-control" id="inputEmail4">
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                    <label for="inputPassword4">Contact</label>
+                                    <input type="text" class="form-control" id="inputPassword4" placeholder="0501594515">
+                                </div>
+                            </div>
+
+                            <!-- Any other information -->
+                            <div class="form-row mt-2">
+                                <div class="form-group col-md-12">
+                                    <label for="inputEmail4">Narate exactly what happened</label>
+                                    <textarea name="" id="" cols="155" rows="4"></textarea>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+                <!-- Evidence -->
+                <div class="container">
+
+                    <div class="mt-5">
+                        <h3 class="text-muted">Evidence Information</h3>
+                        <hr>
+                        <p>To hasten our investigation please add Evidence in a form of audio or picture</p>
+                        <form>
+                            <div class="form-group col-md-8">
+                                <label for="inputEmail4">Voice note</label>
+                                <input type="file" class="form-control" id="inputEmail4">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary px-5 py-3 my-3 offset-5">Submit Information</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Breaking News -->
+        <div class="tab-pane fade" id="nav-breaking-news" role="tabpanel" aria-labelledby="nav-news-tab">
+            <div class="container mt-5">
+                <h3 class="text-muted float-left">Breaking News</h3>
+
+                <ul class="nav nav-pills  mb-3 justify-content-end" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link " id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Create new post</a>
+                    </li>
+
+                </ul>
+
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <!-- Breaking news -->
+                        <div class="container bg-light border-5">
+                            <div class="mx-auto mt-5 pt-5" style="width: 60% ;">
+
+                                <form>
+                                    <div class="form-group">
+                                        <label class="font-weight-bold" for="exampleInputEmail1">Title</label>
+                                        <small class="form-text text-muted">Be specific and make it attractive to get more
+                                            attention.</small>
+                                        <p class="small "></p>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="font-weight-bold" for="exampleInputEmail1">Body</label>
+                                        <small class="form-text text-muted">Summarize all the information to make it
+                                            precise.</small>
+
+                                        <textarea name="News-content" id="" cols="92%" rows="auto"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary mb-5">Create News</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <hr>
+                <ul class="list-unstyled">
+                    <li class="media">
+                        <img src="images/images (3).jfif" style="width: 15%" class="mr-3" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">365 Rape Cases reported in 2019 media object</h5>
+                            A final year student who is reported to have lured level 100 student to an eatery, after which he tricked her to his house and raped her has been arranged before a magistrate court on one count of sexual assault.A total of 326 rape cases were recorded
+                            at the Kwame Nkrumah University of Science and Technology (KNUST) out of which Sixty-Seven (67) male students are reported to have raped female students of the institutions according to the Students Representative Council (SRC)
+                            Safety
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <span class="small">
+                                <nav class="nav">
+                                    <a class="nav-link active" href="#">Edit</a>
+                                    <a class="nav-link" href="#">Delete</a>
+                                    <a class="nav-link" href="#">Link</a>
+        
+                                </nav>
+                            </span>
+                        </div>
+
+                    </li>
+                    <hr class="shadow">
+                    <li class="media my-4">
+                        <img src="images/download (1).jfif" style="width: 15%" class="mr-3" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Destroyed property at KNUST estimated at GHC1.7million</h5>
+                            (KNUST) have said the estimated cost of damage caused the university after the October 22 demonstration is between the range of GH¢1.6 million and GH¢1.7 million. The demonstration, which the students said was peaceful, turned violent leading to the destruction
+                            of property. In an interview with TV3’s Ashanti Region correspondent, Benjamin Aidoo, the University Relations officer, Kwame Yeboah Jnr, said the cost assessed so far does not include stolen items. “The damage cost has been
+                            assessed and it is in the region of GH¢1.6m, GH¢1.7 million. So, if we use the old currency it is about ¢16 to ¢17 billion… these exclude items that were stolen from our offices; both private and public property.” same.
+                            <p class="card-text"><small class="text-muted">Last updated 4 mins ago</small></p>
+                            <span class="small">
+                                <nav class="nav">
+                                    <a class="nav-link active" href="#">Active</a>
+                                    <a class="nav-link" href="#">Link</a>
+                                    <a class="nav-link" href="#">Link</a>
+        
+                                </nav>
+                            </span>
+                        </div>
+                    </li>
+                    <hr>
+                    <li class="media">
+                        <img src="images/download.jfif" width="15%" class="mr-3" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">List-based media object</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            <p class="card-text">
+                                <small class="text-muted ">
+                                    Last updated 5 mins ago
+                                </small>
+                            </p>
+                            <span class="small">
+                                <nav class="nav">
+                                    <a class="nav-link active" href="#">Active</a>
+                                    <a class="nav-link" href="#">Link</a>
+                                    <a class="nav-link" href="#">Link</a>
+        
+                                </nav>
+                            </span>
+                        </div>
+
+                    </li>
+                    <hr>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Missing Items -->
+        <div class="tab-pane fade" id="nav-missing" role="tabpanel" aria-labelledby="nav-missing-tab">
+
+
+
+            <h3 class="text-muted float-left">Missing Items</h3>
+
+            <ul class="nav nav-pills mb-3 justify-content-end" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link " id="pills-contact-tab" data-toggle="pill" href="#report-item" role="tab" aria-controls="pills-contact" aria-selected="false">Report missing item</a>
+                </li>
+
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade" id="report-item" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <!-- Report new item -->
+                    <div class="container bg-light border-5">
+                        <div class="mx-auto mt-5 pt-5" style="width: 60% ;">
+
+                            <form>
+                                <div class="form-group">
+                                    <label class="font-weight-bold" for="exampleInputEmail1">Title</label>
+                                    <small class="form-text text-muted">Be specific in specifying the missing product.</small>
+                                    <p class="small "></p>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="font-weight-bold" for="exampleInputEmail1">Body</label>
+                                    <small class="form-text text-muted">Information must contain time and location.</small>
+
+                                    <textarea name="News-content" id="" cols="92%" rows="auto"></textarea>
+                                </div>
+
+                                <div class="form-row mt-2">
+                                    <div class="form-group col-md-8">
+                                        <label for="inputEmail4"> Name</label>
+                                        <input type="text" class="form-control" id="inputEmail4" placeholder="Officer's name">
+                                    </div>
+
+                                    <div class="form-group col-md-4">
+                                        <label for="inputPassword4">Telephone number</label>
+                                        <input type="tel" class="form-control" id="inputPassword4" placeholder="Telephon number">
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary mb-5">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="media">
+                            <img src="images/wallet.jfif" style="width:25%" class="align-self-start mr-3" alt="...">
+                            <div class="media-body">
+                                <h5 class="mt-0">Wallet with GHS 5,000.00</h5>
+                                <p>If you haven you have come accross a wallet with name Julie Fordjour on student ID please report it to the security station or call <span class="text-muted">1010</span>.
+
+                                    <span class="small">
+                                        
+                                    <nav class="nav text-primary">
+                                        <span class="nav-link" id="name "> Darko Joseph </span>
+                                    <span class="nav-link " id="number ">0501594578</span>
+                                    </nav>
+                                    </span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-6 ">
+                        <div class="media ">
+                            <img src="images/phone.jfif " width="25% " class="align-self-start mr-3 " alt="... ">
+                            <div class="media-body ">
+                                <h5 class="mt-0 ">Google pixle 3</h5>
+                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-6 ">
+                            <div class="media ">
+                                <img src="images/wallet.jfif " style="width:25% " class="align-self-start mr-3 " alt="... ">
+                                <div class="media-body ">
+                                    <h5 class="mt-0 ">Wallet with GHS 5,000.00</h5>
+                                    <p>If you haven you have come accross a wallet with name Julie Fordjour on student ID please report it to the security station or call <span class="text-muted ">1010</span>.</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-6 ">
+                            <div class="media ">
+                                <img src="images/phone.jfif " width="25% " class="align-self-start mr-3 " alt="... ">
+                                <div class="media-body ">
+                                    <h5 class="mt-0 ">Google pixle 3</h5>
+                                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-6 ">
+                            <div class="media ">
+                                <img src="images/wallet.jfif " style="width:25% " class="align-self-start mr-3 " alt="... ">
+                                <div class="media-body ">
+                                    <h5 class="mt-0 ">Wallet with GHS 5,000.00</h5>
+                                    <p>If you haven you have come accross a wallet with name Julie Fordjour on student ID please report it to the security station or call <span class="text-muted ">1010</span>.</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-6 ">
+                            <div class="media ">
+                                <img src="images/phone.jfif " width="25% " class="align-self-start mr-3 " alt="... ">
+                                <div class="media-body ">
+                                    <h5 class="mt-0 ">Google pixle 3</h5>
+                                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-6 ">
+                            <div class="media ">
+                                <img src="images/wallet.jfif " style="width:25% " class="align-self-start mr-3 " alt="... ">
+                                <div class="media-body ">
+                                    <h5 class="mt-0 ">Wallet with GHS 5,000.00</h5>
+                                    <p>If you haven you have come accross a wallet with name Julie Fordjour on student ID please report it to the security station or call <span class="text-muted ">1010</span>.</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-6 ">
+                            <div class="media ">
+                                <img src="images/phone.jfif " width="25% " class="align-self-start mr-3 " alt="... ">
+                                <div class="media-body ">
+                                    <h5 class="mt-0 ">Google pixle 3</h5>
+                                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Help line -->
+        <div class="tab-pane fade " id="nav-help-line " role="tabpanel " aria-labelledby="nav-help-line-tab ">
+            <div class="container ">
+                <!-- First row -->
+                <div class="row mt-5 ">
+                    <div class="col-3 ">
+                        <div class="card border-secondary mb-3 " style="max-width: 18rem; ">
+                            <div class="card-header ">Header</div>
+                            <div class="card-body text-secondary ">
+                                <h5 class="card-title ">Secondary card title</h5>
+                                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 ">
+                        <div class="card border-secondary mb-3 " style="max-width: 18rem; ">
+                            <div class="card-header ">Header</div>
+                            <div class="card-body text-secondary ">
+                                <h5 class="card-title ">Secondary card title</h5>
+                                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 ">
+                        <div class="card border-secondary mb-3 " style="max-width: 18rem; ">
+                            <div class="card-header ">Header</div>
+                            <div class="card-body text-secondary ">
+                                <h5 class="card-title ">Secondary card title</h5>
+                                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 ">
+                        <div class="card border-secondary mb-3 " style="max-width: 18rem; ">
+                            <div class="card-header ">Header</div>
+                            <div class="card-body text-secondary ">
+                                <h5 class="card-title ">Secondary card title</h5>
+                                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second row -->
+                <div class="row mt-5 ">
+                    <div class="col-3 ">
+                        <div class="card border-secondary mb-3 " style="max-width: 18rem; ">
+                            <div class="card-header ">Header</div>
+                            <div class="card-body text-secondary ">
+                                <h5 class="card-title ">Secondary card title</h5>
+                                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 ">
+                        <div class="card border-secondary mb-3 " style="max-width: 18rem; ">
+                            <div class="card-header ">Header</div>
+                            <div class="card-body text-secondary ">
+                                <h5 class="card-title ">Secondary card title</h5>
+                                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 ">
+                        <div class="card border-secondary mb-3 " style="max-width: 18rem; ">
+                            <div class="card-header ">Header</div>
+                            <div class="card-body text-secondary ">
+                                <h5 class="card-title ">Secondary card title</h5>
+                                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 ">
+                        <div class="card border-secondary mb-3 " style="max-width: 18rem; ">
+                            <div class="card-header ">Header</div>
+                            <div class="card-body text-secondary ">
+                                <h5 class="card-title ">Secondary card title</h5>
+                                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="tab-pane fade " id="nav-help-line " role="tabpanel " aria-labelledby="nav-help-line-tab ">
+                        Contact
+             </div> -->
+    </div>
+</body>
+
+</html>

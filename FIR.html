@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/font.css" rel="stylesheet" type="text/css">
+    <script src="js/Bootstrapjquery.js"></script>
+    <script src="js/Propper.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="FontAwesome/css/all.css">
+
+    <script defer src="FontAwesome/js/all.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title> FIR </title>
+
+    <style>
+
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+    <div class=" bg-light " style="">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <a class="navbar-brand " href="#">
+                <img src="images/images (1).jfif" class="rounded ml-5" alt="knust loge" style="width: 100px; height:100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-0" id="navbarText">
+                <span class="text-light ml-auto" style="font-size: 35px;">
+                    KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY <br />
+                    <span class="" style="margin-left: 35%">SECURITY SERVICE</span>
+                </span>
+
+                <span class="navbar-text ml-auto">
+                    <a class="navbar-brand " href="#">
+                        <img src="images/images (2).jfif" class="rounded mr-5" alt="knust loge"
+                            style="width: 100px; height:100px;">
+                    </a>
+                </span>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container mt-5">
+        <nav class="nav nav-pills flex-column flex-sm-row">
+            <a class="flex-sm-fill text-sm-center nav-link active" href="#">First Information Report</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="#">Breaking News</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="#">Missing Items</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="#">Help Line</a>
+        </nav>
+    </div>
+
+    <!-- Complainant Information -->
+    <div class="container">
+        <h1 class="text-center my-5 text-muted"> FIRST INFORMATION REPORT </h1>
+
+        <div class="mt-4">
+            <h3 class="text-muted">Complainant Information</h3>
+            <hr>
+
+            <form>
+                <!-- First name | Last name | Last name -->
+                <div class="form-row mt-4">
+
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4">First name</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="First name">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4">Middle name</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Middle name">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4">Last name</label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="Last name">
+                    </div>
+                </div>
+
+                <!-- Program of study | Year -->
+                <div class="form-row mt-2">
+                    <div class="form-group col-md-8">
+                        <label for="inputEmail4"> Program of study</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Bsc. Computer Science">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4">Year</label>
+                        <input type="number" class="form-control" id="inputPassword4" placeholder="Year 4">
+                    </div>
+                </div>
+
+                <!-- Hall/Hostel    |   Room no.text-muted  |   Others -->
+                <div class="form-row mt-2">
+                    <div class="form-group col-md-8">
+                        <label for="inputEmail4"> Hall / Hostel</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="El-Shaddai">
+                    </div>
+
+                    <div class="form-group col-md-2">
+                        <label for="inputPassword4">Room No.</label>
+                        <input type="number" class="form-control" id="inputPassword4" placeholder="104">
+                    </div>
+
+                    <div class="form-group col-md-2">
+                        <label for="inputPassword4">Others</label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="Annex">
+                    </div>
+                </div>
+
+                <!-- Email  |   Contact -->
+                <div class="form-row mt-2">
+                    <div class="form-group col-md-8">
+                        <label for="inputEmail4"> Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="gilbert@gmail.com">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4">Contact</label>
+                        <input type="tel" class="form-control" id="inputPassword4" placeholder="0501594515">
+                    </div>
+                </div>
+
+                <!--        |   Relationship -->
+                <div class="form-row mt-2">
+                    <div class="form-group col-md-8">
+                        <label for="inputEmail4"> Relation with Culprit</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Type here only when the type of relationship is not found in the dropdown ">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="inputState">Relationship</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>No relationship with culprit</option>
+                            <option>Room mate</option>
+                            <option>In the same hostel</option>
+                            <option>Course mate</option>
+                            <option>Senior course mate</option>
+                            <option>Junior course mate</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Criminal / Culprit Information -->
+    <div class="container">
+
+        <div class="mt-5">
+            <h3 class="text-muted">Criminal / Culprit Information</h3>
+            <hr>
+            <h5 class="text-muted mt-4">How well do you know the culprit?</h5>
+
+            <div class="form-row mt-2">
+
+                <div class="form-group col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            Enough and valid information
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            Just littel but valid information
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            Just littel and not too sure of information
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <form>
+                <!-- First name | Last name | Last name -->
+                <div class="form-row mt-4">
+
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4">First name</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="First name">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4">Middle name</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Middle name">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4">Last name</label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="Last name">
+                    </div>
+                </div>
+
+                <!-- Program of study | Year -->
+                <div class="form-row mt-2">
+                    <div class="form-group col-md-8">
+                        <label for="inputEmail4"> Program of study</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Bsc. Computer Science">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4">Year</label>
+                        <input type="number" class="form-control" id="inputPassword4" placeholder="Year 4">
+                    </div>
+                </div>
+
+                <!-- Hall/Hostel    |   Room no.text-muted  |   Others -->
+                <div class="form-row mt-2">
+                    <div class="form-group col-md-8">
+                        <label for="inputEmail4"> Hall / Hostel</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="El-Shaddai">
+                    </div>
+
+                    <div class="form-group col-md-2">
+                        <label for="inputPassword4">Room No.</label>
+                        <input type="number" class="form-control" id="inputPassword4" placeholder="104">
+                    </div>
+
+                    <div class="form-group col-md-2">
+                        <label for="inputPassword4">Others</label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="Annex">
+                    </div>
+                </div>
+
+                <!-- Nature of offence  |   Location where incident occured     |       Date and Time -->
+                <div class="form-row mt-2">
+
+                    <div class="form-group col-md-4">
+                        <label for="inputState">Type of offence</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Stolen of student property</option>
+                            <option>Damage of school property</option>
+                            <option>Lost of property</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4">Place where incident occured</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Location">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputPassword4">Date</label>
+                        <input type="date" class="form-control" id="inputPassword4" placeholder="Date and Time">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputPassword4">Time</label>
+                        <input type="time" class="form-control" id="inputPassword4" placeholder="Date and Time">
+                    </div>
+                </div>
+
+                <!-- Voice note  |   Contact -->
+                <div class="form-row mt-2">
+
+                    <div class="form-group col-md-8">
+                        <label for="inputEmail4">Voice note</label>
+                        <input type="file" class="form-control" id="inputEmail4">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4">Contact</label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="0501594515">
+                    </div>
+                </div>
+
+                <!-- Any other information -->
+                <div class="form-row mt-2">
+                    <div class="form-group col-md-12">
+                        <label for="inputEmail4">Type any information not mentioned</label>
+                        <textarea name="" id="" cols="155" rows="4"></textarea>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Just little but valid -->
+    <div class="container">
+
+        <div class="mt-5">
+            <hr>
+            <span class="text-muted display-5">Just little but valid</span>
+            <hr>
+
+            <form>
+                <!-- Nature of offence  |   Location where incident occured     |       Date and Time -->
+                <div class="form-row mt-2">
+
+                    <div class="form-group col-md-4">
+                        <label for="inputState">Type of offence</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Stolen of student property</option>
+                            <option>Damage of school property</option>
+                            <option>Lost of property</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4">Place where incident occured</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Location">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputPassword4">Date</label>
+                        <input type="date" class="form-control" id="inputPassword4" placeholder="Date and Time">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputPassword4">Time</label>
+                        <input type="time" class="form-control" id="inputPassword4" placeholder="Date and Time">
+                    </div>
+                </div>
+
+                <!-- Voice note  |   Contact -->
+                <div class="form-row mt-2">
+
+                    <div class="form-group col-md-8">
+                        <label for="inputEmail4">Voice note</label>
+                        <input type="file" class="form-control" id="inputEmail4">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4">Contact</label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="0501594515">
+                    </div>
+                </div>
+
+                <!-- Any other information -->
+                <div class="form-row mt-2">
+                    <div class="form-group col-md-12">
+                        <label for="inputEmail4">Narate exactly what happened</label>
+                        <textarea name="" id="" cols="155" rows="4"></textarea>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Evidence -->
+    <div class="container">
+
+        <div class="mt-5">
+            <h3 class="text-muted">Evidence Information</h3>
+            <hr>
+            <p>To hasten our investigation please add Evidence in a form of audio or picture</p>
+            <form>
+                <div class="form-group col-md-8">
+                    <label for="inputEmail4">Voice note</label>
+                    <input type="file" class="form-control" id="inputEmail4">
+                </div>
+
+                <button type="submit" class="btn btn-primary px-5 py-3 my-3 offset-5">Submit Information</button>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
